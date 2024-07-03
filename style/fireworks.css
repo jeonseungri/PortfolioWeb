@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: antiquewhite;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.nav .topNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 22px;
+}
+
+.topNav__logo {
+  height: 40px;
+}
+
+.topNav__buttons {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* 올바른 font-weight 값 설정 */
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  display: flex;
+  gap: 32px;
+}
+
+/* 불꽃메모리 파일에서 가져온 것 */
+
+iframe,
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.img {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+  background-color: #070606;
+  max-width: 1440px; /* 공백 제거 */
+}
+
+.button img {
+  -webkit-animation: blink 0.5s ease-in-out infinite alternate;
+  -moz-animation: blink 0.5s ease-in-out infinite alternate;
+  animation: blink 0.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
