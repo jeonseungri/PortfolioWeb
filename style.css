@@ -3,13 +3,18 @@
   padding: 0;
 }
 /* 탭바 */
+
 #header {
+  position: fixed; /* 네비게이션 바 고정 */
+  top: 0; /* 상단에 위치 */
+  width: 100%; /* 전체 너비 */
   max-width: 100%;
   background-color: rgb(244, 242, 239);
   border-bottom-color: rgb(76, 41, 14);
   border-bottom-style: solid;
   border-bottom-width: 1.5px;
   color: rgb(76, 41, 14);
+  z-index: 1000; /* 다른 요소들 위에 오도록 설정 */
 }
 .topNav {
   display: flex;
@@ -27,9 +32,12 @@
   display: flex;
   gap: 32px;
   font-size: 30px;
+  text-decoration: none; /* 링크 밑줄 제거 */
+  color: inherit; /* 링크 색상 상속 */
 }
 .section {
   background-color: rgb(244, 242, 239);
+  padding-top: 80px; /* 네비게이션 바 높이만큼 패딩 추가 */
 }
 /* 커버 컨테이너 */
 .container2 {
@@ -41,7 +49,7 @@
 /* 전체 컨테이너 */
 .container {
   background-color: rgb(244, 242, 239);
-  width: 1440px;
+  max-width: 1440px;
   margin-inline: auto;
   padding-inline: 24px;
 }
@@ -62,8 +70,7 @@
   flex-wrap: wrap;
   gap: 2rem; /* 카드 사이에 간격 추가 */
   justify-content: center; /* 카드들을 가운데 정렬 */
-  /* padding-bottom: 2rem; */
-  /* padding-inline: 1.5rem; */
+  padding-bottom: 2rem;
 }
 
 .card {
@@ -98,7 +105,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(255, 251, 251, 0.835), #004f67);
+  background: linear-gradient(to bottom, rgba(255, 251, 251, 0.835), #343430);
   z-index: 2;
   transition: 0.5s all;
   opacity: 0;
@@ -115,6 +122,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  justify-content: center;
 }
 
 .card .info {

@@ -4,12 +4,16 @@
 }
 /* 탭바 */
 #header {
+  position: fixed; /* 네비게이션 바 고정 */
+  top: 0; /* 상단에 위치 */
+  width: 100%; /* 전체 너비 */
   max-width: 100%;
   background-color: rgb(244, 242, 239);
   border-bottom-color: rgb(76, 41, 14);
   border-bottom-style: solid;
   border-bottom-width: 1.5px;
   color: rgb(76, 41, 14);
+  z-index: 1000; /* 다른 요소들 위에 오도록 설정 */
 }
 .topNav {
   display: flex;
@@ -27,15 +31,17 @@
   display: flex;
   gap: 32px;
   font-size: 30px;
+  text-decoration: none; /* 링크 밑줄 제거 */
+  color: inherit; /* 링크 색상 상속 */
 }
 .section {
   background-color: rgb(244, 242, 239);
+  padding-top: 35px;
 }
 .container {
   background-color: rgb(244, 242, 239);
-  width: 1440px;
+  width: 100%;
   margin-inline: auto;
-  padding-inline: 24px;
 }
 
 /* 불꽃메모리 파일에서 가져온 것 */
@@ -45,7 +51,8 @@ img,
 picture,
 svg {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .img {
@@ -69,29 +76,29 @@ video {
   max-width: 1440px; /* 공백 제거 */
 }
 
-@-webkit-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+/* back to top */
+html,
+body {
+  scroll-behavior: smooth; /* 스크롤 스무스 적용 */
 }
 
-@-moz-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.material-symbols-outlined {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(76, 41, 14, 0.5);
+  border-radius: 8px;
+  padding: 8px;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  color: black;
+  font-size: 64px;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.material-symbols-outlined:hover {
+  background-color: #f5b770;
+  transform: translateY(-4px);
 }
