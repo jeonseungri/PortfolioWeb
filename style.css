@@ -28,21 +28,32 @@
   gap: 32px;
   font-size: 30px;
 }
-
-.container {
-  max-width: 1440px;
+.section {
+  background-color: rgb(244, 242, 239);
+}
+/* 커버 컨테이너 */
+.container2 {
+  background-color: rgb(244, 242, 239);
+  width: 100%;
   margin-inline: auto;
   padding-inline: 24px;
+}
+/* 전체 컨테이너 */
+.container {
   background-color: rgb(244, 242, 239);
+  width: 1440px;
+  margin-inline: auto;
+  padding-inline: 24px;
 }
 
 /* 표지 */
 .cover {
   background-color: rgb(244, 242, 239);
-  width: 100%;
+  width: 1440px;
   max-width: 1440px;
   justify-content: center;
-  padding-block: 120px;
+  padding-top: 20px;
+  padding-bottom: 100px;
 }
 
 /* 카드 */
