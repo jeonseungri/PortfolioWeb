@@ -9,18 +9,18 @@
   top: 0; /* 상단에 위치 */
   width: 100%; /* 전체 너비 */
   max-width: 100%;
-  background-color: rgb(244, 242, 239);
-  border-bottom-color: rgb(76, 41, 14);
+  background-color: #fff;
+  border-bottom-color: rgb(37, 37, 37);
   border-bottom-style: solid;
   border-bottom-width: 1.5px;
-  color: rgb(76, 41, 14);
+  color: rgb(37, 37, 37);
   z-index: 1000; /* 다른 요소들 위에 오도록 설정 */
 }
 .topNav {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-block: 22px;
+  padding-block: 12px;
 }
 
 .topNav__button {
@@ -36,19 +36,19 @@
   color: inherit; /* 링크 색상 상속 */
 }
 .section {
-  background-color: rgb(244, 242, 239);
+  /* background-color: rgb(237, 237, 237); */
   padding-top: 80px; /* 네비게이션 바 높이만큼 패딩 추가 */
 }
 /* 커버 컨테이너 */
 .container2 {
-  background-color: rgb(244, 242, 239);
+  /* background-color: rgb(237, 237, 237); */
   width: 100%;
   margin-inline: auto;
-  padding-inline: 24px;
+  /* padding-inline: 24px; */
 }
 /* 전체 컨테이너 */
 .container {
-  background-color: rgb(244, 242, 239);
+  /* background-color: rgb(237, 237, 237); */
   max-width: 1440px;
   margin-inline: auto;
   padding-inline: 24px;
@@ -56,7 +56,7 @@
 
 /* 표지 */
 .cover {
-  background-color: rgb(244, 242, 239);
+  /* background-color: rgb(237, 237, 237); */
   width: 1440px;
   max-width: 1440px;
   justify-content: center;
@@ -85,7 +85,7 @@
   align-items: flex-end;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   transition: 0.5s ease-in-out;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   /* background-color: #fff; */
   overflow: hidden;
   margin-bottom: 2rem; /* 카드들 사이에 간격 추가 */
@@ -147,7 +147,7 @@
   letter-spacing: 1px;
   font-size: 16px;
   margin-block: 4px;
-  line-height: 24px;
+  line-height: auto;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -moz-box;
@@ -157,8 +157,15 @@
   -moz-line-clamp: 5;
   -webkit-line-clamp: 5;
   max-height: 120px;
+  padding-bottom: 4px;
 }
 
+.info span {
+  margin: 0;
+  background-color: rgb(255, 225, 225, 0.2);
+  padding: 6px;
+  border-radius: 4px;
+}
 .gif-container {
   display: flex;
   justify-content: center;

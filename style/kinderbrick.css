@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 탭바 */
+
+#header {
+  position: fixed; /* 네비게이션 바 고정 */
+  top: 0; /* 상단에 위치 */
+  width: 100%; /* 전체 너비 */
+  max-width: 100%;
+  background-color: #fff;
+  border-bottom-color: rgb(37, 37, 37);
+  border-bottom-style: solid;
+  border-bottom-width: 1.5px;
+  color: rgb(37, 37, 37);
+  z-index: 1000; /* 다른 요소들 위에 오도록 설정 */
+}
+.topNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 12px;
+}
+
+.topNav__button {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800; /* 올바른 font-weight 값 설정 */
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  display: flex;
+  gap: 32px;
+  font-size: 30px;
+  text-decoration: none; /* 링크 밑줄 제거 */
+  color: inherit; /* 링크 색상 상속 */
+}
+.section {
+  background-color: #fff;
+  padding-top: 30px;
+  /* padding-bottom: 80px; */
+}
+.container {
+  background-color: #fff;
+  width: 100%;
+  margin-inline: auto;
+  padding-bottom: 40px;
+  /* padding-inline: 24px; */
+}
+
+/* 이미지 */
+
+iframe,
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+  background-color: #070606;
+  max-width: 1440px; /* 공백 제거 */
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* back to top */
+html,
+body {
+  scroll-behavior: smooth; /* 스크롤 스무스 적용 */
+}
+.material-symbols-outlined {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(76, 41, 14, 0.5);
+  border-radius: 8px;
+  padding: 24px;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  color: black;
+  font-size: 84px;
+}
+
+.material-symbols-outlined:hover {
+  background-color: #f5b770;
+  transform: translateY(-4px);
+}

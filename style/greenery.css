@@ -3,23 +3,24 @@
   padding: 0;
 }
 /* 탭바 */
+
 #header {
   position: fixed; /* 네비게이션 바 고정 */
   top: 0; /* 상단에 위치 */
   width: 100%; /* 전체 너비 */
   max-width: 100%;
-  background-color: rgb(244, 242, 239);
-  border-bottom-color: rgb(76, 41, 14);
+  background-color: #fff;
+  border-bottom-color: rgb(37, 37, 37);
   border-bottom-style: solid;
   border-bottom-width: 1.5px;
-  color: rgb(76, 41, 14);
+  color: rgb(37, 37, 37);
   z-index: 1000; /* 다른 요소들 위에 오도록 설정 */
 }
 .topNav {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-block: 22px;
+  padding-block: 12px;
 }
 
 .topNav__button {
@@ -35,18 +36,15 @@
   color: inherit; /* 링크 색상 상속 */
 }
 .section {
-  background-color: rgb(244, 242, 239);
-  padding-top: 35px;
+  padding-top: 30px;
   /* padding-bottom: 80px; */
 }
 .container {
-  background-color: rgb(244, 242, 239);
   width: 100%;
   margin-inline: auto;
   padding-bottom: 40px;
   /* padding-inline: 24px; */
 }
-
 /* 이미지 */
 
 iframe,
@@ -113,11 +111,11 @@ body {
   justify-content: center;
   background-color: rgb(76, 41, 14, 0.5);
   border-radius: 8px;
-  padding: 8px;
+  padding: 24px;
   text-decoration: none;
   transition: 0.2s ease-out;
   color: black;
-  font-size: 64px;
+  font-size: 84px;
 }
 
 .material-symbols-outlined:hover {
